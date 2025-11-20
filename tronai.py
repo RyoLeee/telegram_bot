@@ -3,9 +3,10 @@ from aiogram import Bot, Dispatcher, F, Router
 from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import CommandStart
 from aiogram.client.default import DefaultBotProperties
+import os
 
-# ========== CONFIG ==========
-BOT_TOKEN = "8418509184:AAE4XOYgXovlMA3LZRZQkuJ6qZ1rBjbHFGE"
+# ========== CONFIG =========
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_CHAT_ID = 123456789
 INVITE_CODE = "65880168"
 CONTRACT = "TRXwTm65dF8QotHwdcQJGzp8KVFhAiAiAi"
